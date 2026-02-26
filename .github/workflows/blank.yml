@@ -19,6 +19,7 @@ jobs:
     environment: ${{ github.ref_name }}
     env:
       NAME_ENV: ${{ vars.NAME_ENV }}
+      ALLENV: ${{ vars.ALLENV }}
     steps:
       - uses: actions/checkout@v4
 
@@ -27,3 +28,6 @@ jobs:
 
       - name: Show environment variable
         run: echo "NAME_ENV=$NAME_ENV"
+      
+      - name: Show all variable
+        run: echo "ALLENV=$ALLENV"
