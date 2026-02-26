@@ -20,6 +20,7 @@ jobs:
     env:
       NAME_ENV: ${{ vars.NAME_ENV }}
       ALLENV: ${{ vars.ALLENV }}
+      ENV1: ${{ vars.ENV1 }}
     steps:
       - uses: actions/checkout@v4
 
@@ -31,3 +32,6 @@ jobs:
       
       - name: Show all variable
         run: echo "ALLENV=$ALLENV"
+        
+      - name: Show all remaped env
+        run: echo "ENV1=$ENV1"
