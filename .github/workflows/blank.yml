@@ -26,3 +26,6 @@ jobs:
 
       - name: Show environment variable
         run: echo "NAME_ENV=$NAME_ENV"
+      
+      - name: Show all variable
+        run: echo "ALLENV=$ALLENV"
