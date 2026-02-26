@@ -17,7 +17,9 @@ jobs:
 
     # 🔥 Оце ключове
     environment: ${{ github.ref_name }}
-
+    env:
+      NAME_ENV: ${{ vars.NAME_ENV }}
+      ALLENV: ${{ vars.ALLENV }}
     steps:
       - uses: actions/checkout@v4
 
